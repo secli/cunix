@@ -85,7 +85,6 @@ modules.order
 
 #
 # We don't want to ignore the following even if they are dot-files
-# -> Do ignore this file
 #
 !.clang-format
 !.cocciconfig
