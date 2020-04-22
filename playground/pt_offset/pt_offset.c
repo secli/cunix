@@ -18,7 +18,7 @@
 int main(int argc, const char **argv)
 {
 	unsigned long va;
-	unsigned long pgd_offset, pud_offset, pmd_offset, pte_offset,
+	unsigned int pgd_offset, pud_offset, pmd_offset, pte_offset,
 		      pg_offset;
 
 	if (argc == 2)
@@ -35,9 +35,9 @@ int main(int argc, const char **argv)
 	pg_offset  = PG_OFFSET(va); 
 
 	printf("         va: 0x%016lx\n", va);
-	printf(" pgd offset: 0x%x\t%d\n", pgd_offset, pgd_offset);
-	printf(" pud offset: 0x%x\t%d\n", pud_offset, pud_offset);
-	printf(" pmd offset: 0x%x\t%d\n", pmd_offset, pmd_offset);
-	printf(" pte offset: 0x%x\t%d\n", pte_offset, pte_offset);
-	printf("page offset: 0x%x\t%d\n", pg_offset, pg_offset);
+	printf(" pgd offset: 0x%x\t%u\n", pgd_offset, pgd_offset);
+	printf(" pud offset: 0x%x\t%u\n", pud_offset, pud_offset);
+	printf(" pmd offset: 0x%x\t%u\n", pmd_offset, pmd_offset);
+	printf(" pte offset: 0x%x\t%u\n", pte_offset, pte_offset);
+	printf("page offset: 0x%x\t%u\n", pg_offset, pg_offset);
 }
